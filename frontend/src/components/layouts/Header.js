@@ -4,6 +4,7 @@ import Search from "./Search";
 import { useDispatch, useSelector } from "react-redux";
 import { DropdownButton, Dropdown, Image } from "react-bootstrap";
 import { logout } from "../../actions/userActions";
+import logo from "./logo4.png";
 
 export default function Header() {
   const { isAuthenticated, user } = useSelector((state) => state.authState);
@@ -19,7 +20,7 @@ export default function Header() {
       <div className="col-12 col-md-3">
         <div className="navbar-brand">
           <Link to="/">
-            <img width="150px" alt="ShopEase Logo" src="/images/logo.png" />
+            <img height="60px" width="110px" alt="ShopEase Logo" src={logo} />
           </Link>
         </div>
       </div>
